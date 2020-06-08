@@ -729,38 +729,14 @@ div.calltoaction.cta1 > a > button.button-hyperion {
 
 body.casestudy1 .pullquote {
     text-align: center;
-    margin: 20px 20px 30px;
+    margin: 20px 90px 30px;
     color: #CC562B;
-}
-
-@media (min-width:576px) {
-    body.casestudy1 .pullquote {
-        text-align: center;
-        margin: 20px 90px 30px;
-        color: #CC562B;
-    }
 }
 
 body.casestudy1 {
     display: grid;
-    grid-template-columns: .0px .15fr 1fr .15fr 0px;
+    grid-template-columns: 1fr 1fr 700px 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-}
-
-@media (min-width:576px) {
-    body.casestudy1 {
-        display: grid;
-        grid-template-columns: .0px 1fr 500px 1fr 0px;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    }
-}
-
-@media (min-width:992px) {
-    body.casestudy1 {
-        display: grid;
-        grid-template-columns: 1fr 1fr 700px 1fr 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    }
 }
 
 body.casestudy1 > nav.navbar {
