@@ -783,12 +783,23 @@ body.casestudy1 > div.headerbackground {
 
 body.casestudy1 h1.post-title {
     grid-area: 2 / 3 / 3 / 4;
-    font-size: 35px;
+    font-size: 30px;
     color: #ffffff;
     font-style: italic;
-    margin-right: 50px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+@media (min-width:576px) {
+    body.casestudy1 h1.post-title {
+        grid-area: 2 / 3 / 3 / 4;
+        font-size: 35px;
+        color: #ffffff;
+        font-style: italic;
+        margin-right: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
 
 .post-subtitle {
@@ -796,9 +807,17 @@ body.casestudy1 h1.post-title {
 
 body.casestudy1 > h5.post-subtitle {
     grid-area: 3 / 3 / 4 / 4;
-    margin-right: 50px;
     font-style: italic;
     margin-top: 10px;
+}
+
+@media (min-width:576px) {
+    body.casestudy1 > h5.post-subtitle {
+        grid-area: 3 / 3 / 4 / 4;
+        margin-right: 50px;
+        font-style: italic;
+        margin-top: 10px;
+    }
 }
 
 .post-hor-divider {

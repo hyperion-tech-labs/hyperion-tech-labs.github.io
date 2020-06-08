@@ -22,23 +22,22 @@
     .hero {
         background-color: #000E24;
         display: grid;
-        grid-template-columns: 1fr 50px 300px 90px 300px 50px 1fr;
-        grid-template-rows: 100px auto 120px auto 100px;
+        grid-template-columns: 1fr 50px 300px 120px 300px 50px 1fr;
+        grid-template-rows: 100px auto 100px auto 80px;
     }
 }
 
 .socialmediaicons {
     max-height: 26px;
-    margin-right: 0px;
 }
 
 .button-hyperion {
     background-color: #F56835;
     color: #ffffff;
     border-radius: 3px;
-    height: 26px;
+    height: 30px;
     border-style: none;
-    width: 90px;
+    width: auto;
     vertical-align: middle;
 }
 
@@ -47,10 +46,7 @@
 }
 
 .hero .button-hyperion {
-    grid-area: 4 / 2 / 5 / 3;
-    margin-left: auto;
-    margin-right: auto;
-    height: 35px;
+    height: 36px;
 }
 
 .socialproof {
@@ -73,7 +69,7 @@
     .socialproof {
         background-color: #ffffff;
         display: grid;
-        grid-template-columns: 1fr 450px 450px 1fr;
+        grid-template-columns: 1fr 500px 400px 1fr;
         grid-template-rows: 100px auto 50px;
     }
 }
@@ -82,8 +78,18 @@
     background-color: #ffffff;
     text-align: center;
     display: grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-    grid-template-rows: auto 100px auto auto 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    grid-template-rows: auto 130px auto auto 130px auto auto 130px auto auto;
+}
+
+@media (min-width:576px) {
+    .features {
+        background-color: #ffffff;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        grid-template-rows: auto 130px auto auto 130px auto auto 130px auto auto;
+    }
 }
 
 @media (min-width:992px) {
@@ -105,23 +111,28 @@
 
 .footer {
     background-color: #000E24;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto;
 }
 
 .hero > img .cpu {
 }
 
 .hero img.cpu {
-    grid-area: 1 / 1 / 6 / 7;
+    grid-area: 3 / 2 / 6 / 6;
     margin-left: auto;
     margin-right: auto;
     object-fit: fill;
-    height: 100%;
-    display: none;
+    width: 100%;
+    align-self: flex-end;
+
+    /* display: none */
 }
 
 @media (min-width:576px) {
     .hero img.cpu {
-        grid-area: 1 / 1 / 6 / 7;
+        grid-area: 1 / 2 / 6 / 6;
         margin-left: auto;
         margin-right: auto;
         object-fit: fill;
@@ -185,10 +196,6 @@
 @media (min-width:576px) {
     .hero > h1 {
         text-align: center;
-        color: #ffffff;
-        font-size: 48px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
         margin-bottom: 30px;
         z-index: 1;
         grid-area: 2 / 1 / 3 / 7;
@@ -199,9 +206,6 @@
     .hero > h1 {
         text-align: center;
         color: #ffffff;
-        font-size: 48px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
         margin-bottom: 10px;
         z-index: 1;
         grid-area: 2 / 2 / 3 / 7;
@@ -222,8 +226,7 @@
 @media (min-width:576px) {
     .hero > h2 {
         text-align: center;
-        font-weight: 300;
-        font-size: 22px;
+        font-size: 18px;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
         z-index: 1;
@@ -236,12 +239,11 @@
     .hero > h2 {
         text-align: center;
         font-weight: 300;
-        font-size: 22px;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
         z-index: 1;
         grid-area: 3 / 3 / 4 / 6;
-        width: 368px;
+        width: 280px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -268,7 +270,7 @@
     margin-top: auto;
     grid-area: 1 / 2 / 2 / 4;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media (min-width:576px) {
@@ -276,8 +278,6 @@
         text-align: center;
         margin-top: auto;
         grid-area: 1 / 2 / 2 / 4;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
     }
 }
 
@@ -311,7 +311,7 @@
 
 @media (min-width:992px) {
     .socialproof > img {
-        height: 250px;
+        height: 200px;
         margin-left: auto;
         margin-right: auto;
         align-self: center;
@@ -324,6 +324,8 @@ section.socialproof > h1 {
     text-align: center;
     grid-area: 2 / 2 / 3 / 4;
     font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 @media (min-width:576px) {
@@ -339,40 +341,18 @@ section.socialproof > h1 {
         grid-area: 2 / 2 / 3 / 3;
         margin-left: 40px;
         margin-right: 40px;
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 10px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
     }
 }
 
-section.socialproof > button.button-hyperion {
-    margin-left: auto;
-    margin-right: auto;
-    align-self: center;
-    height: 40px;
-    grid-area: 3 / 2 / 4 / 4;
-}
-
-@media (min-width:576px) {
-    section.socialproof > button.button-hyperion {
-        margin-left: auto;
-        margin-right: auto;
-        align-self: center;
-        height: 40px;
-        grid-area: 3 / 2 / 4 / 4;
-    }
+section.socialproof > a > button.button-hyperion {
+    height: 36px;
+    background-color: #000E24;
+    color: #F56835;
 }
 
 @media (min-width:992px) {
-    section.socialproof > button.button-hyperion {
-        margin-left: auto;
-        margin-right: auto;
-        height: 40px;
-        grid-area: 3 / 2 / 4 / 3;
-        align-self: flex-start;
-        margin-top: -40px;
-    }
 }
 
 div.calltoaction .cta1 {
@@ -435,30 +415,27 @@ div.calltoaction.cta1 > h1 {
     }
 }
 
-div.calltoaction.cta1 > button.button-hyperion {
+div.calltoaction.cta1 > a {
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    height: 40px;
+    height: 36px;
     grid-area: 2 / 2 / 3 / 3;
 }
 
 @media (min-width:576px) {
-    div.calltoaction.cta1 > button.button-hyperion {
+    div.calltoaction.cta1 > a {
         margin-left: auto;
         margin-right: auto;
-        align-self: center;
-        height: 40px;
         grid-area: 2 / 2 / 3 / 3;
     }
 }
 
 @media (min-width:992px) {
-    div.calltoaction.cta1 > button.button-hyperion {
+    div.calltoaction.cta1 > a {
         margin-left: auto;
         margin-right: auto;
         align-self: center;
-        height: 40px;
         grid-area: 2 / 2 / 3 / 3;
     }
 }
@@ -476,6 +453,17 @@ div.features > h3 {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+@media (min-width:992px) {
+    div.features > h3 {
+        margin-left: 40px;
+        margin-right: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 1.5rem;
+    }
 }
 
 .feature3 {
@@ -483,6 +471,12 @@ div.features > h3 {
 
 img.feature-icons.feature1 {
     grid-area: 2 / 2 / 3 / 3;
+}
+
+@media (min-width:576px) {
+    img.feature-icons.feature1 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
 }
 
 @media (min-width:992px) {
@@ -495,6 +489,12 @@ div.features > h2.feature1 {
     grid-area: 3 / 2 / 4 / 3;
 }
 
+@media (min-width:576px) {
+    div.features > h2.feature1 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+}
+
 @media (min-width:992px) {
     div.features > h2.feature1 {
         grid-area: 3 / 2 / 4 / 3;
@@ -505,6 +505,12 @@ div.features h3.feature1 {
     grid-area: 4 / 2 / 5 / 3;
 }
 
+@media (min-width:576px) {
+    div.features h3.feature1 {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+}
+
 @media (min-width:992px) {
     div.features h3.feature1 {
         grid-area: 4 / 2 / 5 / 3;
@@ -512,7 +518,13 @@ div.features h3.feature1 {
 }
 
 img.feature-icons.feature2 {
-    grid-area: 2 / 3 / 3 / 4;
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+@media (min-width:576px) {
+    img.feature-icons.feature2 {
+        grid-area: 5 / 2 / 6 / 3;
+    }
 }
 
 @media (min-width:992px) {
@@ -522,7 +534,13 @@ img.feature-icons.feature2 {
 }
 
 div.features h2.feature2 {
-    grid-area: 3 / 3 / 4 / 4;
+    grid-area: 6 / 2 / 7 / 3;
+}
+
+@media (min-width:576px) {
+    div.features h2.feature2 {
+        grid-area: 6 / 2 / 7 / 3;
+    }
 }
 
 @media (min-width:992px) {
@@ -532,7 +550,13 @@ div.features h2.feature2 {
 }
 
 div.features > h3.feature2 {
-    grid-area: 4 / 3 / 5 / 4;
+    grid-area: 7 / 2 / 8 / 3;
+}
+
+@media (min-width:576px) {
+    div.features > h3.feature2 {
+        grid-area: 7 / 2 / 8 / 3;
+    }
 }
 
 @media (min-width:992px) {
@@ -542,7 +566,13 @@ div.features > h3.feature2 {
 }
 
 img.feature-icons.feature3 {
-    grid-area: 2 / 4 / 3 / 5;
+    grid-area: 8 / 2 / 9 / 3;
+}
+
+@media (min-width:576px) {
+    img.feature-icons.feature3 {
+        grid-area: 8 / 2 / 9 / 3;
+    }
 }
 
 @media (min-width:992px) {
@@ -552,7 +582,13 @@ img.feature-icons.feature3 {
 }
 
 div.features > h2.feature3 {
-    grid-area: 3 / 4 / 4 / 5;
+    grid-area: 9 / 2 / 10 / 3;
+}
+
+@media (min-width:576px) {
+    div.features > h2.feature3 {
+        grid-area: 9 / 2 / 10 / 3;
+    }
 }
 
 @media (min-width:992px) {
@@ -562,7 +598,13 @@ div.features > h2.feature3 {
 }
 
 div.features > h3.feature3 {
-    grid-area: 4 / 4 / 5 / 5;
+    grid-area: 10 / 2 / 11 / 3;
+}
+
+@media (min-width:576px) {
+    div.features > h3.feature3 {
+        grid-area: 10 / 2 / 11 / 3;
+    }
 }
 
 @media (min-width:992px) {
@@ -572,11 +614,21 @@ div.features > h3.feature3 {
 }
 
 div.features > h1 {
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 1 / 2 / 2 / 3;
     margin-bottom: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     margin-top: 30px;
+}
+
+@media (min-width:576px) {
+    div.features > h1 {
+        grid-area: 1 / 2 / 2 / 3;
+        margin-bottom: 30px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        margin-top: 30px;
+    }
 }
 
 @media (min-width:992px) {
@@ -587,4 +639,247 @@ div.features > h1 {
         font-weight: 500;
         margin-top: 30px;
     }
+}
+
+.copywrite {
+}
+
+div.footer > p.copywrite {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    grid-area: 2 / 1 / 3 / 3;
+    margin-left: 40px;
+}
+
+@media (min-width:992px) {
+    div.footer > p.copywrite {
+        color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 10px;
+        grid-area: 2 / 1 / 3 / 2;
+        margin-left: 40px;
+    }
+
+    .nav-item .nav-link button.button-hyperion {
+        margin-left: 25px;
+    }
+}
+
+.hero > img.brain:hover {
+}
+
+body section.hero > a {
+    z-index: 3;
+    grid-area: 4 / 3 / 5 / 5;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width:576px) {
+    body section.hero > a {
+        z-index: 3;
+        grid-area: 4 / 3 / 5 / 5;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:992px) {
+    body section.hero > a {
+        z-index: 3;
+        grid-area: 4 / 4 / 5 / 5;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+section.socialproof > a {
+    grid-area: 3 / 2 / 4 / 4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+section.socialproof > a {
+    grid-area: 3 / 2 / 4 / 4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+@media (min-width:992px) {
+    section.socialproof > a {
+        grid-area: 3 / 2 / 4 / 3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -40px;
+    }
+}
+
+section.socialproof > a > button.button-hyperion:hover {
+    color: #ffffff;
+}
+
+div.calltoaction.cta1 > a > button.button-hyperion {
+    height: 36px;
+}
+
+body.casestudy1 .pullquote {
+    text-align: center;
+    margin: 20px 20px 30px;
+    color: #CC562B;
+}
+
+@media (min-width:576px) {
+    body.casestudy1 .pullquote {
+        text-align: center;
+        margin: 20px 90px 30px;
+        color: #CC562B;
+    }
+}
+
+body.casestudy1 {
+    display: grid;
+    grid-template-columns: .0px .15fr 1fr .15fr 0px;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
+
+@media (min-width:576px) {
+    body.casestudy1 {
+        display: grid;
+        grid-template-columns: .0px 1fr 500px 1fr 0px;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+}
+
+@media (min-width:992px) {
+    body.casestudy1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 700px 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    }
+}
+
+body.casestudy1 > nav.navbar {
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-area: 1 / 1 / 2 / 6;
+    box-shadow: 0px 1px 5px #cccccc;
+}
+
+.headerbackground {
+}
+
+body.casestudy1 > div.headerbackground {
+    grid-area: 2 / 1 / 3 / 6;
+    background-color: #000E24;
+}
+
+.post-title {
+}
+
+body.casestudy1 h1.post-title {
+    grid-area: 2 / 3 / 3 / 4;
+    font-size: 35px;
+    color: #ffffff;
+    font-style: italic;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.post-subtitle {
+}
+
+body.casestudy1 > h5.post-subtitle {
+    grid-area: 3 / 3 / 4 / 4;
+    margin-right: 50px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.post-hor-divider {
+}
+
+body.casestudy1 > hr.post-hor-divider {
+    width: 90%;
+    grid-area: 4 / 1 / 5 / 6;
+}
+
+.post-1 {
+}
+
+body.casestudy1 > div.post-1 {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+.post-2 {
+}
+
+body.casestudy1 > div.post-2 {
+    grid-area: 6 / 3 / 7 / 4;
+}
+
+.pq1 {
+}
+
+body.casestudy1 > h3.pullquote.pq1 {
+    grid-area: 7 / 3 / 8 / 4;
+}
+
+.post-3 {
+}
+
+.post-image-1 {
+}
+
+body.casestudy1 > p.post-3 {
+    grid-area: 8 / 3 / 9 / 4;
+}
+
+body.casestudy1 > img.post-image-1 {
+    width: 100%;
+    grid-area: 9 / 2 / 10 / 5;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.post-4 {
+}
+
+.post-5 {
+}
+
+.post-6 {
+}
+
+.pq2 {
+}
+
+body.casestudy1 > h3.pullquote.pq2 {
+    grid-area: 11 / 3 / 12 / 4;
+}
+
+body.casestudy1 > div.post-5 {
+    grid-area: 12 / 3 / 13 / 4;
+}
+
+body.casestudy1 > div.post-6 {
+    grid-area: 13 / 3 / 14 / 4;
+    margin-bottom: 20px;
+}
+
+body.casestudy1 > div.calltoaction.cta1 {
+    grid-area: 14 / 1 / 15/ 6;
+}
+
+body.casestudy1 > div.footer {
+    grid-area: 15 / 1 / 16 / 6;
+}
+
+body.casestudy1 > div.post-4 {
+    grid-area: 10 / 3 / 11 / 4;
 }
